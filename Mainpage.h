@@ -11,7 +11,7 @@ using namespace std;
 #define IOS ios_base::sync_with_stdio(0);cin.tie(0);cout.tie(0);
 #define endl "\n"
 #define tab  "\t"
-#define MAX 3
+#define MAX 5
 
 /* Header Section */
 
@@ -134,7 +134,7 @@ void quizzon::gameplay()
 		if (break_law = 'N' or 'n' or ' ')
 		{
 			srand(time(0));
-               int 	question = 1 + rand() % 3;
+               int 	question = 1 + rand() % 5;
                check_question = binary_search(Question_index,0,MAX-1,question);
                if (check_question = -1)
                {
