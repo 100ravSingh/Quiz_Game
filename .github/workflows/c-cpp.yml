@@ -1,0 +1,23 @@
+name: C/C++ CI
+
+on:
+  push:
+    branches: none #[ "main" ]
+  pull_request:
+    branches: none #[ "main" ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: none actions/checkout@v3
+    - name: none configure
+      run: none ./configure
+    - name: MakeFile
+      run: MakeFile
+    - name: MakeFile check
+      run: MakeFile check
+    - name: MakeFile distcheck
+      run: MakeFile distcheck
