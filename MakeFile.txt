@@ -10,9 +10,9 @@ CFLAGS = -Wall -g
 # Targets needed to bring the executable up to date
  
 Main: Main.o 
-    $(CC) $(CFLAGS) -o main Main.o 
+    $(CC) $(CFLAGS) -o Main Main.o 
  
-# The main.o target can be written more simply
+# The Main.o target can be written more simply
  
 Main.o: Main.cpp Mainpage.h Game.h
     $(CC) $(CFLAGS) -c Main.cpp
